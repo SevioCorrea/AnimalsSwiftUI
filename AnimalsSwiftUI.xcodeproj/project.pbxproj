@@ -73,8 +73,7 @@
 				227688722A250F72003B6861 /* Info.plist */,
 				227688692A250D4C003B6861 /* Data */,
 				2276885E2A250C1D003B6861 /* Video */,
-				2238BB712A24FAFD005E9B8E /* AnimalsSwiftUIApp.swift */,
-				2238BB732A24FAFE005E9B8E /* ContentView.swift */,
+				227688732A2510E9003B6861 /* App */,
 				2238BB752A24FB00005E9B8E /* Assets.xcassets */,
 				2238BB772A24FB00005E9B8E /* Preview Content */,
 			);
@@ -115,6 +114,15 @@
 				2276886D2A250D6E003B6861 /* videos.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		227688732A2510E9003B6861 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2238BB712A24FAFD005E9B8E /* AnimalsSwiftUIApp.swift */,
+				2238BB732A24FAFE005E9B8E /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
