@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  VideoListView.swift
 //  AnimalsSwiftUI
 //
 //  Created by Sévio Basilio Corrêa on 29/05/23.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct VideoListView: View {
     var body: some View {
-        Text("Content")
-        .padding()
+        Text("Video")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct VideoListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VideoListView()
     }
 }

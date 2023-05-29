@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GalleryView.swift
 //  AnimalsSwiftUI
 //
 //  Created by Sévio Basilio Corrêa on 29/05/23.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GalleryView: View {
     var body: some View {
-        Text("Content")
-        .padding()
+        Text("Gallery")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GalleryView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GalleryView()
     }
 }
