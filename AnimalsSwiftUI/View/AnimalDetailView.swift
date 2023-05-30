@@ -50,10 +50,26 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
                 
                 // Facts
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    InsetFactView(animal: animal)
+                }
+                .padding(.horizontal)
                 
                 //Description
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
                 
                 // Map
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                }
+                .padding(.horizontal)
                 
                 // Link
                 
