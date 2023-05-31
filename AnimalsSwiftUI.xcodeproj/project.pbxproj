@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2210C5E12A27955E00D3A2B9 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2210C5E02A27955E00D3A2B9 /* VideoModel.swift */; };
+		2210C5E32A27962A00D3A2B9 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2210C5E22A27962A00D3A2B9 /* VideoListItemView.swift */; };
 		221724542A26322500335DAC /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221724532A26322500335DAC /* AnimalDetailView.swift */; };
 		221724562A26386000335DAC /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221724552A26386000335DAC /* HeadingView.swift */; };
 		221724582A263AC400335DAC /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221724572A263AC400335DAC /* InsetGalleryView.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2210C5E02A27955E00D3A2B9 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		2210C5E22A27962A00D3A2B9 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		221724532A26322500335DAC /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		221724552A26386000335DAC /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		221724572A263AC400335DAC /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				221724592A2640C300335DAC /* InsetFactView.swift */,
 				2217245B2A26460400335DAC /* InsetMapView.swift */,
 				221724632A2669A000335DAC /* ExternalWeblinkView.swift */,
+				2210C5E22A27962A00D3A2B9 /* VideoListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				227688802A252369003B6861 /* CoverImageModel.swift */,
 				227688872A2530F1003B6861 /* AnimalModel.swift */,
+				2210C5E02A27955E00D3A2B9 /* VideoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,8 +287,10 @@
 				2217245C2A26460400335DAC /* InsetMapView.swift in Sources */,
 				2238BB722A24FAFE005E9B8E /* AnimalsSwiftUIApp.swift in Sources */,
 				227688752A251230003B6861 /* VideoListView.swift in Sources */,
+				2210C5E12A27955E00D3A2B9 /* VideoModel.swift in Sources */,
 				227688792A251296003B6861 /* GalleryView.swift in Sources */,
 				221724582A263AC400335DAC /* InsetGalleryView.swift in Sources */,
+				2210C5E32A27962A00D3A2B9 /* VideoListItemView.swift in Sources */,
 				227688842A2524C4003B6861 /* CodableBundleExtension.swift in Sources */,
 				221724562A26386000335DAC /* HeadingView.swift in Sources */,
 			);
@@ -341,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -395,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
