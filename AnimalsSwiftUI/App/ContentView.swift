@@ -11,6 +11,9 @@ struct ContentView: View {
     
     // MARK: - Propriedades
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
+    @State private var isGridViewActive: Bool = false
     
     // MARK: - Body
     var body: some View {
@@ -29,6 +32,33 @@ struct ContentView: View {
             } //: List
             .listStyle(PlainListStyle())
             .navigationBarTitle("Africa", displayMode: .large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    HStack(spacing: 16) {
+                        // List
+                        Button(action: {
+                            print("List view is activated.")
+                            isGridViewActive = false
+                            haptics.impactOccurred()
+                        }) {
+                            Image(systemName: "square.fill.text.grid.1x2")
+                                .font(.title2)
+                                .foregroundColor(isGridViewActive ? .primary : .accentColor)
+                        }
+                        
+                        // Grid
+                        Button(action: {
+                            print("Grid view is activated.")
+                            isGridViewActive = true
+                            haptics.impactOccurred()
+                        }) {
+                            Image(systemName: "square.grid.2x2")
+                                .font(.title2)
+                                .foregroundColor(isGridViewActive ? .accentColor : .primary)
+                        }
+                    } //: HStack
+                } //: Buttons
+            } //: Toolbar
         } //: Navigation
     }
 }
