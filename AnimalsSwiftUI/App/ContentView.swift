@@ -15,7 +15,30 @@ struct ContentView: View {
     
     @State private var isGridViewActive: Bool = false
     
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+//    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Int = 1
+    @State private var toolBarIcon: String = "square.grid.2x2"
+    
+    // MARK: - Functions
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColumn = gridLayout.count
+        print("Grid Number: \(gridColumn)")
+        
+        //: Toolbar Image
+        switch gridColumn {
+        case 1:
+            toolBarIcon = "square.grid.2x2"
+        case 2:
+            toolBarIcon = "square.grid.3x2"
+        case 3:
+            toolBarIcon = "square.grid.1x2"
+        default:
+            toolBarIcon = "square.grid.2x2"
+        }
+    }
     
     // MARK: - Body
     var body: some View {
@@ -44,7 +67,7 @@ struct ContentView: View {
                             } //: Loop
                         } //: Grid
                         .padding(10)
-                        .animation(.easeIn)
+                        .animation(.easeIn, value: gridColumn)
                     } //: Scroll
                 } //: Condition
             } //: Group
@@ -69,8 +92,9 @@ struct ContentView: View {
                             print("Grid view is activated.")
                             isGridViewActive = true
                             haptics.impactOccurred()
+                            gridSwitch()
                         }) {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolBarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridViewActive ? .accentColor : .primary)
                         }
