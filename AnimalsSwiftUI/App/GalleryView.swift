@@ -52,7 +52,9 @@ struct GalleryView: View {
                 Slider(value: $gridColumn, in: 2...4, step: 1)
                     .padding(.horizontal)
                     .onChange(of: gridColumn, perform: { value in
-                        gridSwitch()
+                        withAnimation(.easeIn) {
+                            gridSwitch()
+                        }
                     })
                 
                 // MARK: - Grid
@@ -70,7 +72,7 @@ struct GalleryView: View {
                             }
                     } //: Loop
                 } //: Grid
-                .animation(.easeIn)
+//                .animation(.easeIn)
                 .onAppear(perform: {
                     gridSwitch()
                 })
