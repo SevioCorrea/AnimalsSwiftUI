@@ -47,6 +47,8 @@
 		229E88192A27B60F0062B4AD /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 227688642A250C45003B6861 /* rhino.mp4 */; };
 		229E881A2A27B60F0062B4AD /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 227688612A250C45003B6861 /* zebra.mp4 */; };
 		229E881D2A27B71C0062B4AD /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E881C2A27B71C0062B4AD /* VideoPlayerHelper.swift */; };
+		22ABCA582A3615440071C2F1 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABCA572A3615440071C2F1 /* CreditsView.swift */; };
+		22ABCA5B2A3618900071C2F1 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ABCA5A2A3618900071C2F1 /* CenterModifier.swift */; };
 		22CAF9372A2A26EE001DDAC2 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAF9362A2A26EE001DDAC2 /* MapAnnotationView.swift */; };
 		22CAF9392A2A3536001DDAC2 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAF9382A2A3536001DDAC2 /* MotionAnimationView.swift */; };
 		22EF60DA2A323EFE00F46F9D /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF60D92A323EFE00F46F9D /* AnimalGridItemView.swift */; };
@@ -120,6 +122,8 @@
 		229866112A34B21100BF0951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229E880F2A27B3F40062B4AD /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		229E881C2A27B71C0062B4AD /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		22ABCA572A3615440071C2F1 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		22ABCA5A2A3618900071C2F1 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		22CAF9362A2A26EE001DDAC2 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		22CAF9382A2A3536001DDAC2 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		22EF60D92A323EFE00F46F9D /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		2238BB702A24FAFD005E9B8E /* AnimalsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				22ABCA592A36184D0071C2F1 /* Modifier */,
 				229E881B2A27B6EC0062B4AD /* Uitilities */,
 				227688822A25249F003B6861 /* Extension */,
 				2276887F2A252353003B6861 /* Model */,
@@ -236,6 +241,7 @@
 				22CAF9362A2A26EE001DDAC2 /* MapAnnotationView.swift */,
 				22CAF9382A2A3536001DDAC2 /* MotionAnimationView.swift */,
 				22EF60D92A323EFE00F46F9D /* AnimalGridItemView.swift */,
+				22ABCA572A3615440071C2F1 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +280,14 @@
 				229E881C2A27B71C0062B4AD /* VideoPlayerHelper.swift */,
 			);
 			path = Uitilities;
+			sourceTree = "<group>";
+		};
+		22ABCA592A36184D0071C2F1 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				22ABCA5A2A3618900071C2F1 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +424,10 @@
 				22EF60DA2A323EFE00F46F9D /* AnimalGridItemView.swift in Sources */,
 				221724582A263AC400335DAC /* InsetGalleryView.swift in Sources */,
 				2210C5E32A27962A00D3A2B9 /* VideoListItemView.swift in Sources */,
+				22ABCA582A3615440071C2F1 /* CreditsView.swift in Sources */,
 				227688842A2524C4003B6861 /* CodableBundleExtension.swift in Sources */,
 				22CAF9392A2A3536001DDAC2 /* MotionAnimationView.swift in Sources */,
+				22ABCA5B2A3618900071C2F1 /* CenterModifier.swift in Sources */,
 				221724562A26386000335DAC /* HeadingView.swift in Sources */,
 				229E88102A27B3F40062B4AD /* VideoPlayerView.swift in Sources */,
 			);
@@ -566,6 +582,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sevio.AnimalsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,6 +615,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sevio.AnimalsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
